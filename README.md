@@ -3,7 +3,7 @@
 
 이 프로젝트는 React, TypeScript, 그리고 Tailwind CSS를 사용하여 만든 클래식 2048 퍼즐 게임입니다. 깔끔하고 현대적인 다크 모드 UI와 함께 부드러운 애니메이션과 반응형 디자인을 갖추고 있습니다.
 
-실행주소1 : https://2048.vercel.app/
+실행주소1 : https://2048-orcin-nine.vercel.app/
 
 실행주소2 : https://dev-canvas-pi.vercel.app/
 

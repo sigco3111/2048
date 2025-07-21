@@ -1,0 +1,6 @@
+{
+  "name": "2048 게임",
+  "description": "React와 Tailwind CSS로 만든 클래식 2048 퍼즐 게임입니다. 타일을 합쳐 2048 타일에 도달하세요!",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

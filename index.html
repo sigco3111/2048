@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>2048 게임</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            transitionTimingFunction: {
+              'out-expo': 'cubic-bezier(0.16, 1, 0.3, 1)',
+            },
+            keyframes: {
+              'fade-in': {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              'spawn-in': {
+                'from': { transform: 'scale(0)', opacity: '0' },
+                'to': { transform: 'scale(1)', opacity: '1' },
+              },
+              'merge-enhanced': {
+                '0%': { transform: 'scale(1)', boxShadow: 'none' },
+                '50%': { transform: 'scale(1.2)', boxShadow: '0 0 20px 8px rgba(255, 215, 0, 0.7)' },
+                '100%': { transform: 'scale(1)', boxShadow: 'none' },
+              },
+              'combo-pop': {
+                '0%': { transform: 'scale(0.8) translateY(20px)', opacity: '0' },
+                '30%': { transform: 'scale(1.1)', opacity: '1' },
+                '100%': { transform: 'scale(1) translateY(-20px)', opacity: '0' },
+              },
+              'text-shine': {
+                '0%': { 'background-position': '-200%' },
+                '100%': { 'background-position': '200%' },
+              },
+              'fall': {
+                'from': { transform: 'translateY(-10vh) rotate(0deg)' },
+                'to': { transform: 'translateY(110vh) rotate(720deg)' },
+              },
+              'score-pop': {
+                '0%, 100%': { transform: 'scale(1)' },
+                '50%': { transform: 'scale(1.2)' },
+              },
+            },
+            animation: {
+              'fade-in': 'fade-in 0.5s ease-in-out',
+              'spawn-in': 'spawn-in 0.2s ease-out',
+              'merge-enhanced': 'merge-enhanced 0.2s ease-in-out',
+              'combo-pop': 'combo-pop 1s ease-in-out forwards',
+              'text-shine': 'text-shine 2s linear infinite',
+              'score-pop': 'score-pop 0.3s ease-in-out',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #1e293b; /* slate-800 */
+      }
+      .text-shine {
+        background: linear-gradient(90deg, #fff, #ffd700, #fff);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.10.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <noscript>이 앱을 실행하려면 JavaScript를 활성화해야 합니다.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

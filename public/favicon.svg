@@ -1,1 +1,12 @@
- 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" rx="4" fill="#1E293B"/>
+  <path d="M6 10H12V16H6V10Z" fill="#FFA500"/>
+  <path d="M14 10H20V16H14V10Z" fill="#FFA500"/>
+  <path d="M14 18H20V24H14V18Z" fill="#FFA500"/>
+  <path d="M22 18H28V24H22V18Z" fill="#FFA500"/>
+  <text x="7" y="14.5" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">2</text>
+  <text x="15" y="14.5" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">0</text>
+  <text x="15" y="22.5" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">4</text>
+  <text x="23" y="22.5" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">8</text>
+</svg> 
